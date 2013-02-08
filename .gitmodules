@@ -1,3 +1,6 @@
 [submodule "bundle/editorconfig"]
 	path = bundle/editorconfig
 	url = git://github.com/editorconfig/editorconfig-vim.git
+[submodule "bundle/command-t"]
+	path = bundle/command-t
+	url = git://git.wincent.com/command-t.git
