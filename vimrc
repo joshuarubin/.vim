@@ -31,9 +31,6 @@ set list
 set listchars=tab:>-,trail:-
 set autoindent
 set smartindent
-if has('gui_running')
-  set nu
-endif
 set modeline
 set wrap
 set nocopyindent
@@ -50,7 +47,12 @@ set formatoptions=croqlt
 set shiftwidth=4
 set backspace=indent,eol,start
 
-"set transparency=15
+
+if has('gui_running')
+  set nu
+  set guifont=Inconsolata:h12
+  set transparency=5
+endif
 
 set exrc   " enable per-directory .vimrc files
 set secure " disable unsafe commands in local .vimrc files
@@ -63,5 +65,6 @@ let php_asp_tags = 1
 let g:SuperTabDefaultCompletionType = "context"
 let g:SuperTabClosePreviewOnPopupClose = 1
 let g:DisableAutoPHPFolding = 1
+let g:ctrlp_root_markers = ['.root']
 
 colorscheme solarized
