@@ -48,20 +48,21 @@ set ofu=syntaxcomplete#Complete
 let mapleader = ","
 let php_asp_tags = 1
 
+execute pathogen#infect()
+"execute pathogen#helptags()
+
+let g:SuperTabDefaultCompletionType = "context"
+let g:SuperTabClosePreviewOnPopupClose = 1
+let g:DisableAutoPHPFolding = 1
+let g:ctrlp_root_markers = ['.root']
+
+set nu
+set guifont=Inconsolata:h12
+
+au BufNewFile,BufRead,BufEnter *.cpp,*.hpp set omnifunc=omni#cpp#complete#Main
+
+colorscheme solarized
+
 if has('gui_running')
-  execute pathogen#infect()
-  execute pathogen#helptags()
-
-  let g:SuperTabDefaultCompletionType = "context"
-  let g:SuperTabClosePreviewOnPopupClose = 1
-  let g:DisableAutoPHPFolding = 1
-  let g:ctrlp_root_markers = ['.root']
-
-  set nu
-  set guifont=Inconsolata:h12
   set transparency=3
-
-  au BufNewFile,BufRead,BufEnter *.cpp,*.hpp set omnifunc=omni#cpp#complete#Main
-
-  colorscheme solarized
 endif
