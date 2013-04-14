@@ -59,7 +59,7 @@ if has('gui_running')
 
   set nu
   set guifont=Inconsolata:h12
-  set transparency=5
+  set transparency=3
 
   au BufNewFile,BufRead,BufEnter *.cpp,*.hpp set omnifunc=omni#cpp#complete#Main
 
