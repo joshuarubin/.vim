@@ -55,6 +55,7 @@ let g:SuperTabDefaultCompletionType = "context"
 let g:SuperTabClosePreviewOnPopupClose = 1
 let g:DisableAutoPHPFolding = 1
 let g:ctrlp_root_markers = ['.root']
+let g:syntastic_coffee_coffeelint_args = "--csv -f ~/.vim/coffeelint.config.json"
 
 set nu
 set guifont=Inconsolata:h12
