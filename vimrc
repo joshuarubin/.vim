@@ -36,9 +36,9 @@ set wildmode=longest,list:longest,list:full
 "set textwidth=80
 set wrap
 set expandtab
-set tabstop=4
+set tabstop=2
 set formatoptions=croqlt
-set shiftwidth=4
+set shiftwidth=2
 set backspace=indent,eol,start
 
 set exrc   " enable per-directory .vimrc files
@@ -64,5 +64,5 @@ au BufNewFile,BufRead,BufEnter *.cpp,*.hpp set omnifunc=omni#cpp#complete#Main
 colorscheme solarized
 
 if has('gui_running')
-  set transparency=3
+  set transparency=1
 endif
