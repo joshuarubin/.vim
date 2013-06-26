@@ -58,11 +58,14 @@ let g:ctrlp_root_markers = ['.root']
 let g:syntastic_coffee_coffeelint_args = "--csv -f ~/.vim/coffeelint.config.json"
 
 set nu
-set guifont=Inconsolata:h12
+
+set guifont=Inconsolata\ for\ Powerline:h12
 
 au BufNewFile,BufRead,BufEnter *.cpp,*.hpp set omnifunc=omni#cpp#complete#Main
 
 colorscheme solarized
+
+set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim
 
 if has('gui_running')
   set transparency=1
