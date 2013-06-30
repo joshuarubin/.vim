@@ -48,8 +48,9 @@ set ofu=syntaxcomplete#Complete
 let mapleader = ","
 let php_asp_tags = 1
 
-execute pathogen#infect()
-"execute pathogen#helptags()
+if filereadable(expand("~/.vim/vundles.vim"))
+  source ~/.vim/vundles.vim
+endif
 
 let g:SuperTabDefaultCompletionType = "context"
 let g:SuperTabClosePreviewOnPopupClose = 1
